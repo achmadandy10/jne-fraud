@@ -3,11 +3,11 @@
 @section('content')
     <div class="flex gap-4 py-4 px-4">
         <div class="flex-[2] flex flex-col gap-4">
-            <a href="/perizinan-baru" class="text-3xl uppercase w-full text-white bg-[#0D2B70] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-5 py-7 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Perizinan Baru</a>
+            <a href="/permit/perizinan-baru" class="text-3xl uppercase w-full text-white bg-[#0D2B70] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-5 py-7 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Perizinan Baru</a>
             <a href="/perpanjangan" class="text-3xl uppercase w-full text-white bg-[#D0391C] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg px-5 py-7 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Perpanjangan</a>
         </div>
         <div class="flex-[3]">
-                
+
         </div>
         <div class="flex-[2] flex flex-col gap-4">
             <div class="flex gap-4">
