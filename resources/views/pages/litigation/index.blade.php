@@ -9,7 +9,7 @@
             <a href="/litigation/other" class="text-3xl uppercase w-full text-white bg-[#3D8116] hover:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium rounded-lg px-5 py-7 text-center dark:bg-green-600 dark:gray:bg-green-700 dark:focus:ring-green-900">Other</a>
         </div>
         <div class="flex-[3]">
-                
+
         </div>
         <div class="flex-[2] flex flex-col gap-4">
             <div class="flex gap-4">
