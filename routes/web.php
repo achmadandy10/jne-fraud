@@ -24,6 +24,7 @@ Route::prefix('/drafting')->group(function () {
 Route::prefix('/litigation')->group(function () {
     Route::get('/', function () { return view('pages.litigation.index'); });
     Route::get('/customer-dispute', function () { return view('pages.litigation.customer_dispute.customer_dispute'); });
+    Route::get('/fraud', function () { return view('pages.litigation.fraud.index'); });
 });
 
 Route::prefix('/permit')->group(function () {
