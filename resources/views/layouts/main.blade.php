@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="{{ asset("images/icon.png") }}" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aplikasi Froud JNE</title>
+    <title>Aplikasi Legal Akses | JNE</title>
 
     <link rel="stylesheet" href="{{ asset("css/app.css") }}">
 </head>
