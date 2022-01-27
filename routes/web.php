@@ -15,8 +15,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () { return view('welcome'); });
-Route::get('/drafting', function () { return view('pages.drafting'); });
-Route::get('/litigation', function () { return view('pages.litigation'); });
-Route::get('/permit', function () { return view('pages.permit'); });
-Route::get('/customer-dispute', function () { return view('pages.customer_dispute'); });
-Route::get('/contact-us', function () { return view('pages.contact_us'); });
+Route::get('/contact-us', function () { return view('contact_us'); });
+
+Route::prefix('/drafting')->group(function () {
+    Route::get('/', function () { return view('pages.drafting.index'); });
+});
+
+Route::prefix('/litigation')->group(function () {
+    Route::get('/', function () { return view('pages.litigation.index'); });
+    Route::get('/customer-dispute', function () { return view('pages.litigation.customer_dispute.customer_dispute'); });
+});
+
+Route::prefix('/permit')->group(function () {
+    Route::get('/', function () { return view('pages.permit.index'); });
+});
