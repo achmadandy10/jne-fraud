@@ -19,6 +19,7 @@ Route::get('/contact-us', function () { return view('contact_us'); });
 
 Route::prefix('/drafting')->group(function () {
     Route::get('/', function () { return view('pages.drafting.index'); });
+    Route::get('/customer', function(){return view('pages.drafting.customer.index'); });
 });
 
 Route::prefix('/litigation')->group(function () {
