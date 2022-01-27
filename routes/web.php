@@ -21,6 +21,7 @@ Route::prefix('/drafting')->group(function () {
     Route::get('/', function () { return view('pages.drafting.index'); });
     Route::get('/customer', function(){return view('pages.drafting.customer.index'); });
     Route::get('/vendor-supplier', function(){return view('pages.drafting.vendor_supplier.index'); });
+    Route::get('/lease', function(){return view('pages.drafting.lease.index'); });
 });
 
 Route::prefix('/litigation')->group(function () {
@@ -28,7 +29,6 @@ Route::prefix('/litigation')->group(function () {
     Route::get('/customer-dispute', function () { return view('pages.litigation.customer_dispute.customer_dispute'); });
     Route::get('/fraud', function () { return view('pages.litigation.fraud.index'); });
     Route::get('/other', function () { return view('pages.litigation.other.index'); });
-
 });
 
 Route::prefix('/permit')->group(function () {
