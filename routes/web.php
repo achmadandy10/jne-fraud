@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () { return view('welcome'); });
 Route::get('/contact-us', function () { return view('contact_us'); });
+Route::get('/login', function () { return view('pages.auth.login'); });
 
 Route::prefix('/drafting')->group(function () {
     Route::get('/', function () { return view('pages.drafting.index'); });
@@ -26,16 +27,16 @@ Route::prefix('/drafting')->group(function () {
 
 Route::prefix('/litigation')->group(function () {
     Route::get('/', function () { return view('pages.litigation.index'); });
-    
+
     Route::get('/customer-dispute', function () { return view('pages.litigation.customer_dispute.index'); });
     Route::get('/customer-dispute/check', function () { return view('pages.litigation.customer_dispute.check'); });
-    
+
     Route::get('/fraud', function () { return view('pages.litigation.fraud.index'); });
     Route::get('/fraud/check', function () { return view('pages.litigation.fraud.check'); });
-    
+
     Route::get('/outstanding', function () { return view('pages.litigation.outstanding.index'); });
     Route::get('/outstanding/check', function () { return view('pages.litigation.outstanding.check'); });
-    
+
     Route::get('/other', function () { return view('pages.litigation.other.index'); });
     Route::get('/other/check', function () { return view('pages.litigation.other.check'); });
 });
