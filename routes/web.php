@@ -49,5 +49,8 @@ Route::prefix('/litigation')->group(function () {
 
 Route::prefix('/permit')->group(function () {
     Route::get('/', function () { return view('pages.permit.index'); });
+
     Route::get('/perizinan-baru', function () { return view('pages.permit.perizinan_baru.index'); });
+    Route::get('/perizinan-baru/approval', function () { return view('pages.permit.perizinan_baru.approval'); });
+    Route::get('/perizinan-baru/check', function () { return view('pages.permit.perizinan_baru.check'); });
 });
