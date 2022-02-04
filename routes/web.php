@@ -20,9 +20,15 @@ Route::get('/login', function () { return view('pages.auth.login'); });
 
 Route::prefix('/drafting')->group(function () {
     Route::get('/', function () { return view('pages.drafting.index'); });
+
     Route::get('/customer', function(){return view('pages.drafting.customer.index'); });
+    Route::get('/customer/check', function(){return view('pages.drafting.customer.check'); });
+
     Route::get('/vendor-supplier', function(){return view('pages.drafting.vendor_supplier.index'); });
+    Route::get('/vendor-supplier/check', function(){return view('pages.drafting.vendor_supplier.check'); });
+
     Route::get('/lease', function(){return view('pages.drafting.lease.index'); });
+    Route::get('/lease/check', function(){return view('pages.drafting.lease.check'); });
 });
 
 Route::prefix('/litigation')->group(function () {
