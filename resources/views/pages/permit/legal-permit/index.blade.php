@@ -46,10 +46,12 @@
                                     2021-1-12
                                 </td>
                                 <td class="px-6 py-4 text-center">
-                                    <a href="#" class="px-4 py-1 text-sm text-white bg-blue-400 rounded">Edit</a>
+                                    <a href="#"
+                                        class="px-4 py-1 text-sm text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800">Edit</a>
                                 </td>
                                 <td class="px-6 py-4 text-center">
-                                    <a href="#" class="px-4 py-1 text-sm text-white bg-red-400 rounded">Delete</a>
+                                    <a href="#"
+                                        class="px-4 py-1 text-sm text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-center dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-800">Delete</a>
                                 </td>
                             </tr>
                             <tr class="whitespace-nowrap">
@@ -68,10 +70,12 @@
                                     2021-1-12
                                 </td>
                                 <td class="px-6 py-4 text-center">
-                                    <a href="#" class="px-4 py-1 text-sm text-white bg-blue-400 rounded">Edit</a>
+                                    <a href="#"
+                                        class="px-4 py-1 text-sm text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800">Edit</a>
                                 </td>
                                 <td class="px-6 py-4 text-center">
-                                    <a href="#" class="px-4 py-1 text-sm text-white bg-red-400 rounded">Delete</a>
+                                    <a href="#"
+                                        class="px-4 py-1 text-sm text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-center dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-800">Delete</a>
                                 </td>
                             </tr>
                             <tr class="whitespace-nowrap">
@@ -90,10 +94,12 @@
                                     2021-1-12
                                 </td>
                                 <td class="px-6 py-4 text-center">
-                                    <a href="#" class="px-4 py-1 text-sm text-white bg-blue-400 rounded">Edit</a>
+                                    <a href="#"
+                                        class="px-4 py-1 text-sm text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800">Edit</a>
                                 </td>
                                 <td class="px-6 py-4 text-center">
-                                    <a href="#" class="px-4 py-1 text-sm text-white bg-red-400 rounded">Delete</a>
+                                    <a href="#"
+                                        class="px-4 py-1 text-sm text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-center dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-800">Delete</a>
                                 </td>
                             </tr>
 

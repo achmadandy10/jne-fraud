@@ -47,11 +47,11 @@
                                 </td>
                                 <td class="px-6 py-4 text-center">
                                     <a href="#"
-                                        class="px-4 py-1 text-sm text-white bg-blue-400 hover:bg-blue-500 rounded">Edit</a>
+                                        class="px-4 py-1 text-sm text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800">Edit</a>
                                 </td>
                                 <td class="px-6 py-4 text-center">
                                     <a href="#"
-                                        class="px-4 py-1 text-sm text-white bg-red-400 hover:bg-red-500 rounded">Delete</a>
+                                        class="px-4 py-1 text-sm text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-center dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-800">Delete</a>
                                 </td>
                             </tr>
                             <tr class="whitespace-nowrap">
@@ -71,11 +71,11 @@
                                 </td>
                                 <td class="px-6 py-4 text-center">
                                     <a href="#"
-                                        class="px-4 py-1 text-sm text-white bg-blue-400 hover:bg-blue-500 rounded">Edit</a>
+                                        class="px-4 py-1 text-sm text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800">Edit</a>
                                 </td>
                                 <td class="px-6 py-4 text-center">
                                     <a href="#"
-                                        class="px-4 py-1 text-sm text-white bg-red-400 hover:bg-red-500 rounded">Delete</a>
+                                        class="px-4 py-1 text-sm text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-center dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-800">Delete</a>
                                 </td>
                             </tr>
                             <tr class="whitespace-nowrap">
@@ -95,14 +95,13 @@
                                 </td>
                                 <td class="px-6 py-4 text-center">
                                     <a href="#"
-                                        class="px-4 py-1 text-sm text-white bg-blue-400 hover:bg-blue-500 rounded">Edit</a>
+                                        class="px-4 py-1 text-sm text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800">Edit</a>
                                 </td>
                                 <td class="px-6 py-4 text-center">
                                     <a href="#"
-                                        class="px-4 py-1 text-sm text-white bg-red-400 hover:bg-red-500 rounded">Delete</a>
+                                        class="px-4 py-1 text-sm text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-center dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-800">Delete</a>
                                 </td>
                             </tr>
-
                         </tbody>
                     </table>
                 </div>
