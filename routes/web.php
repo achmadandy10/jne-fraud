@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () { return view('welcome'); });
 Route::get('/contact-us', function () { return view('contact_us'); });
 Route::get('/login', function () { return view('pages.auth.login'); });
+Route::get('/database', function () { return view('pages.database.index'); });
 
 Route::prefix('/drafting')->group(function () {
     Route::get('/', function () { return view('pages.drafting.index'); });
@@ -53,4 +54,29 @@ Route::prefix('/permit')->group(function () {
     Route::get('/perizinan-baru', function () { return view('pages.permit.perizinan_baru.index'); });
     Route::get('/perizinan-baru/approval', function () { return view('pages.permit.perizinan_baru.approval'); });
     Route::get('/perizinan-baru/check', function () { return view('pages.permit.perizinan_baru.check'); });
+});
+
+Route::prefix('/legal-permit')->group(function () {
+    Route::get('/', function () { return view('pages.permit.legal-permit.index'); });
+});
+
+
+Route::prefix('/admin-legal')->group(function () {
+    Route::get('/', function () { return view('pages.admin-legal.index'); });
+});
+
+Route::prefix('/legal-litigation-1')->group(function () {
+    Route::get('/', function () { return view('pages.litigation.legal-litigation-1.index'); });
+});
+
+Route::prefix('/legal-litigation-2')->group(function () {
+    Route::get('/', function () { return view('pages.litigation.legal-litigation-2.index'); });
+});
+
+Route::prefix('/legal-manager')->group(function () {
+    Route::get('/', function () { return view('pages.litigation.legal-manager.index'); });
+});
+
+Route::prefix('/team-cs')->group(function () {
+    Route::get('/', function () { return view('pages.litigation.team-cs.index'); });
 });
