@@ -17,22 +17,11 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-        dd(auth()->user());
-        if (Auth::check()) {
-            if (auth()->user()->role == 'ADMIN') {
-                return redirect('admin-dashboard');
-            } else {
-                return redirect('login')->with('error',"You don't have admin access.");
-            }
-        } else {
-            return redirect('login')->with('error',"You have to login first.");
+        if(auth()->user()->role == 'ADMIN'){
+            return $next($request);
         }
 
-        // if(auth()->user()->role == 'ADMIN'){
-        //     return $next($request);
-        // }
-
-        // return redirect('home')->with('error',"You don't have admin access.");
+        return redirect('home')->with('error',"You don't have admin access.");
 
     }
 }

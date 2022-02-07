@@ -17,7 +17,6 @@ class IsUser
      */
     public function handle(Request $request, Closure $next)
     {
-        dd(auth()->user());
         if (Auth::check()) {
             if (auth()->user()->role == 'USER') {
                 return redirect('home');
