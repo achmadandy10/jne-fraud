@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\Drafting\DraftingController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Litigation\LitigationController;
+use App\Http\Controllers\Permit\PermitController;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Route;
 
@@ -14,13 +18,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () { return view('welcome'); });
-Route::get('/contact-us', function () { return view('contact_us'); });
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/contact-us', [HomeController::class, 'contactUs'])->name('contactUs');
 Route::get('/login', function () { return view('pages.auth.login'); });
 Route::get('/database', function () { return view('pages.database.index'); });
 
 Route::prefix('/drafting')->group(function () {
-    Route::get('/', function () { return view('pages.drafting.index'); });
+    Route::get('/', [DraftingController::class, 'index'])->name('drafting-index');
 
     Route::get('/customer', function(){return view('pages.drafting.customer.index'); });
     Route::get('/customer/check', function(){return view('pages.drafting.customer.check'); });
@@ -33,7 +37,7 @@ Route::prefix('/drafting')->group(function () {
 });
 
 Route::prefix('/litigation')->group(function () {
-    Route::get('/', function () { return view('pages.litigation.index'); });
+    Route::get('/', [LitigationController::class, 'index'])->name('litigation-index');
 
     Route::get('/customer-dispute', function () { return view('pages.litigation.customer_dispute.index'); });
     Route::get('/customer-dispute/check', function () { return view('pages.litigation.customer_dispute.check'); });
@@ -49,7 +53,7 @@ Route::prefix('/litigation')->group(function () {
 });
 
 Route::prefix('/permit')->group(function () {
-    Route::get('/', function () { return view('pages.permit.index'); });
+    Route::get('/', [PermitController::class, 'index'])->name('permit-index');
 
     Route::get('/perizinan-baru', function () { return view('pages.permit.perizinan_baru.index'); });
     Route::get('/perizinan-baru/approval', function () { return view('pages.permit.perizinan_baru.approval'); });
