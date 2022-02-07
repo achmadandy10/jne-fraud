@@ -26,7 +26,6 @@
                         <div class="text-4 text-white col-span-1">:</div>
                         <div class="text-4 text-white col-span-5 grid place-items-end">Litigation</div>
                     </div>
-
                 </div>
             </div>
 
