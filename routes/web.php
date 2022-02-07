@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Drafting\CustomerController;
 use App\Http\Controllers\Drafting\DraftingController;
 use App\Http\Controllers\Drafting\LeaseController;
@@ -26,9 +28,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home')->middleware('IsUser');
 Route::get('/contact-us', [HomeController::class, 'contactUs'])->name('contactUs');
-Route::get('/login', function () { return view('pages.auth.login'); });
+Route::get('/login', [HomeController::class, 'login'])->name('login');
+Route::post('/login', [LoginController::class, 'login'])->name('login-attempt');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/database', function () { return view('pages.database.index'); });
 
 Route::prefix('/drafting')->group(function () {
@@ -76,8 +80,8 @@ Route::prefix('/legal-permit')->group(function () {
     Route::get('/', function () { return view('pages.permit.legal-permit.index'); });
 });
 
-Route::prefix('/admin-legal')->group(function () {
-    Route::get('/', function () { return view('pages.admin-legal.index'); });
+Route::prefix('/admin-legal')->middleware('IsAdmin')->group(function () {
+    Route::get('/', [DashboardController::class, 'index'])->name('admin-dashboard');
 });
 
 Route::prefix('/legal-litigation-1')->group(function () {
