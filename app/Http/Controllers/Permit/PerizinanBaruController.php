@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 class PerizinanBaruController extends Controller
 {
     public function index(){
-        return view('pages.permit.index');
+        return view('pages.permit.perizinan_baru.index');
+    }
+
+    public function check()
+    {
+        return view('pages.permit.perizinan_baru.check');
     }
 }

@@ -1,8 +1,16 @@
 <?php
 
+use App\Http\Controllers\Drafting\CustomerController;
 use App\Http\Controllers\Drafting\DraftingController;
+use App\Http\Controllers\Drafting\LeaseController;
+use App\Http\Controllers\Drafting\VendorController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Litigation\CustomerDisputeController;
+use App\Http\Controllers\Litigation\FraudController;
 use App\Http\Controllers\Litigation\LitigationController;
+use App\Http\Controllers\Litigation\OtherController;
+use App\Http\Controllers\Litigation\OutstandingController;
+use App\Http\Controllers\Permit\PerizinanBaruController;
 use App\Http\Controllers\Permit\PermitController;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Route;
@@ -26,38 +34,38 @@ Route::get('/database', function () { return view('pages.database.index'); });
 Route::prefix('/drafting')->group(function () {
     Route::get('/', [DraftingController::class, 'index'])->name('drafting-index');
 
-    Route::get('/customer', function(){return view('pages.drafting.customer.index'); });
-    Route::get('/customer/check', function(){return view('pages.drafting.customer.check'); });
+    Route::get('/customer', [CustomerController::class, 'index'])->name('customer-index');
+    Route::get('/customer/check', [CustomerController::class, 'check'])->name('customer-check');
 
-    Route::get('/vendor-supplier', function(){return view('pages.drafting.vendor_supplier.index'); });
-    Route::get('/vendor-supplier/check', function(){return view('pages.drafting.vendor_supplier.check'); });
+    Route::get('/vendor-supplier', [VendorController::class, 'index'])->name('vendor-index');
+    Route::get('/vendor-supplier/check', [VendorController::class, 'check'])->name('vendor-check');
 
-    Route::get('/lease', function(){return view('pages.drafting.lease.index'); });
-    Route::get('/lease/check', function(){return view('pages.drafting.lease.check'); });
+    Route::get('/lease', [LeaseController::class, 'index'])->name('lease-index');
+    Route::get('/lease/check', [LeaseController::class, 'check'])->name('lease-check');
 });
 
 Route::prefix('/litigation')->group(function () {
     Route::get('/', [LitigationController::class, 'index'])->name('litigation-index');
 
-    Route::get('/customer-dispute', function () { return view('pages.litigation.customer_dispute.index'); });
-    Route::get('/customer-dispute/check', function () { return view('pages.litigation.customer_dispute.check'); });
+    Route::get('/customer-dispute', [CustomerDisputeController::class, 'index'])->name('customer-dispute-index');
+    Route::get('/customer-dispute/check', [CustomerDisputeController::class, 'check'])->name('customer-dispute-check');
 
-    Route::get('/fraud', function () { return view('pages.litigation.fraud.index'); });
-    Route::get('/fraud/check', function () { return view('pages.litigation.fraud.check'); });
+    Route::get('/fraud', [FraudController::class, 'index'])->name('fraud-index');
+    Route::get('/fraud/check', [FraudController::class, 'check'])->name('fraud-check');
 
-    Route::get('/outstanding', function () { return view('pages.litigation.outstanding.index'); });
-    Route::get('/outstanding/check', function () { return view('pages.litigation.outstanding.check'); });
+    Route::get('/outstanding', [OutstandingController::class, 'index'])->name('outstanding-index');
+    Route::get('/outstanding/check', [OutstandingController::class, 'check'])->name('outstanding-check');
 
-    Route::get('/other', function () { return view('pages.litigation.other.index'); });
-    Route::get('/other/check', function () { return view('pages.litigation.other.check'); });
+    Route::get('/other', [OtherController::class, 'index'])->name('other-index');
+    Route::get('/other/check', [OtherController::class, 'check'])->name('other-check');
 });
 
 Route::prefix('/permit')->group(function () {
     Route::get('/', [PermitController::class, 'index'])->name('permit-index');
 
-    Route::get('/perizinan-baru', function () { return view('pages.permit.perizinan_baru.index'); });
-    Route::get('/perizinan-baru/approval', function () { return view('pages.permit.perizinan_baru.approval'); });
-    Route::get('/perizinan-baru/check', function () { return view('pages.permit.perizinan_baru.check'); });
+    Route::get('/perizinan-baru', [PerizinanBaruController::class, 'index'])->name('perizinan-baru-index');
+    Route::get('/perizinan-baru/approval', [PerizinanBaruController::class, 'approval'])->name('perizinan-baru-approval');
+    Route::get('/perizinan-baru/check', [PerizinanBaruController::class, 'check'])->name('perizinan-baru-check');
 });
 
 Route::prefix('/legal-permit')->group(function () {

@@ -3,7 +3,7 @@
 @section('content')
     <div class="flex gap-4 py-4 px-4">
         <div class="flex-[2] flex flex-col gap-4">
-            <a href="/permit/perizinan-baru"
+            <a href="{{ route('perizinan-baru-index') }}"
                 class="text-3xl uppercase w-full text-white bg-[#0D2B70] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-5 py-7 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Perizinan
                 Baru</a>
             <a href="/perpanjangan"
