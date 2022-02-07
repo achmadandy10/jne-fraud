@@ -80,7 +80,7 @@ Route::prefix('/legal-permit')->group(function () {
     Route::get('/', function () { return view('pages.permit.legal-permit.index'); });
 });
 
-Route::prefix('/admin-legal')->middleware('IsAdmin')->group(function () {
+Route::prefix('/admin-legal')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('admin-dashboard');
 });
 
