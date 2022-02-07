@@ -26,7 +26,6 @@
                         <div class="text-4 text-white col-span-1">:</div>
                         <div class="text-4 text-white col-span-5 grid place-items-end">Litigation</div>
                     </div>
-
                 </div>
             </div>
 
@@ -275,10 +274,11 @@
                 </div>
 
                 <div class="flex justify-end items-center">
-                    <button type="button" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-xl px-20 py-4 text-center mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Submit</button>
+                    <button type="button"
+                        class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-xl px-20 py-4 text-center mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Submit</button>
                 </div>
             </div>
-           
+
         </form>
 
 

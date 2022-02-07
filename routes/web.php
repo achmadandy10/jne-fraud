@@ -49,7 +49,7 @@ Route::prefix('/litigation')->group(function () {
 
     Route::get('/customer-dispute', [CustomerDisputeController::class, 'index'])->name('customer-dispute-index');
     Route::get('/customer-dispute/check', [CustomerDisputeController::class, 'check'])->name('customer-dispute-check');
-    Route::get('/customer-dispute/repot', [CustomerDisputeController::class, 'report'])->name('customer-dispute-report');
+    Route::get('/customer-dispute/report', [CustomerDisputeController::class, 'report'])->name('customer-dispute-report');
 
     Route::get('/fraud', [FraudController::class, 'index'])->name('fraud-index');
     Route::get('/fraud/check', [FraudController::class, 'check'])->name('fraud-check');
@@ -61,7 +61,7 @@ Route::prefix('/litigation')->group(function () {
 
     Route::get('/other', [OtherController::class, 'index'])->name('other-index');
     Route::get('/other/check', [OtherController::class, 'check'])->name('other-check');
-    Route::get('/other/report', [OtherController::class, 'check'])->name('other-report');
+    Route::get('/other/report', [OtherController::class, 'report'])->name('other-report');
 });
 
 Route::prefix('/permit')->group(function () {
