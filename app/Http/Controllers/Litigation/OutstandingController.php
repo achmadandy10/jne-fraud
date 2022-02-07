@@ -16,4 +16,9 @@ class OutstandingController extends Controller
     {
         return view('pages.litigation.outstanding.check');
     }
+
+    public function report()
+    {
+        return view('pages.litigation.outstanding.report');
+    }
 }

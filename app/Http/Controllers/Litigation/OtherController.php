@@ -16,4 +16,9 @@ class OtherController extends Controller
     {
         return view('pages.litigation.other.check');
     }
+
+    public function report()
+    {
+        return view('pages.litigation.other.report');
+    }
 }

@@ -16,4 +16,9 @@ class FraudController extends Controller
     {
         return view('pages.litigation.fraud.check');
     }
+
+    public function report()
+    {
+        return view('pages.litigation.fraud.report');
+    }
 }

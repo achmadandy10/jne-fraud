@@ -16,4 +16,9 @@ class CustomerDisputeController extends Controller
     {
         return view('pages.litigation.customer_dispute.check');
     }
+
+    public function report()
+    {
+        return view('pages.litigation.customer_dispute.report');
+    }
 }
