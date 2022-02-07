@@ -72,7 +72,6 @@ Route::prefix('/legal-permit')->group(function () {
     Route::get('/', function () { return view('pages.permit.legal-permit.index'); });
 });
 
-
 Route::prefix('/admin-legal')->group(function () {
     Route::get('/', function () { return view('pages.admin-legal.index'); });
 });

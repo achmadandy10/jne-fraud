@@ -15,4 +15,9 @@ class HomeController extends Controller
     {
         return view('contact_us');
     }
+
+    public function login()
+    {
+        return view('pages.auth.login');
+    }
 }

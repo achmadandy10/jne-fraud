@@ -6,7 +6,7 @@
         <div class="w-full h-screen flex items-center justify-center">
             <form class="w-full md:w-1/3 bg-white rounded-lg">
                 <div class="flex font-bold justify-center mt-6">
-                    <img class="mb-7" src={{ asset('images/logo.png') }}>
+                    <img class="mb-7 mt-5" src={{ asset('images/logo.png') }}>
                 </div>
                 <div class="px-12 pb-10">
                     <div class="w-full mb-2">
@@ -19,7 +19,7 @@
                     <div class="w-full mb-2">
                         <div class="flex items-center">
                             <i class='ml-3 fill-current text-gray-400 text-xs z-10 fas fa-lock'></i>
-                            <input type='text' placeholder="Password"
+                            <input type='password' placeholder="Password"
                                 class="-mx-6 px-8 w-full border rounded py-2 text-gray-700 focus:outline-none" />
                         </div>
                     </div>
@@ -29,6 +29,7 @@
                     <a href="/" type="submit"
                         class="w-full py-2 rounded-full bg-blue-600 hover:bg-blue-700 text-gray-100 focus:outline-none text-center">Back
                         to Home</a>
+                </div>
             </form>
         </div>
     </body>
