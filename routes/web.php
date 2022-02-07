@@ -61,7 +61,7 @@ Route::prefix('/litigation')->group(function () {
 
     Route::get('/other', [OtherController::class, 'index'])->name('other-index');
     Route::get('/other/check', [OtherController::class, 'check'])->name('other-check');
-    Route::get('/other/report', [OtherController::class, 'check'])->name('other-report');
+    Route::get('/other/report', [OtherController::class, 'report'])->name('other-report');
 });
 
 Route::prefix('/permit')->group(function () {

@@ -589,6 +589,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-5 {
   margin-right: 1.25rem;
 }
+.mr-20 {
+  margin-right: 5rem;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
 .block {
   display: block;
 }
@@ -631,6 +637,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-5\/6 {
   width: 83.333333%;
 }
+.w-15 {
+  width: 15rem;
+}
 .min-w-0 {
   min-width: 0px;
 }
@@ -654,6 +663,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .flex-\[12\] {
   flex: 12;
+}
+.flex-initial {
+  flex: 0 1 auto;
 }
 .flex-\[7\] {
   flex: 7;
@@ -693,6 +705,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
@@ -704,6 +719,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .grid-rows-1 {
   grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+.grid-rows-5 {
+  grid-template-rows: repeat(5, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;

@@ -9,6 +9,9 @@ module.exports = {
             gridRow: {
                 "span-21": "span 21 / span 21",
             },
+            width: {
+                '15': '15rem',
+            },
         },
     },
     plugins: [
