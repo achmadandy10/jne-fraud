@@ -18,40 +18,47 @@
     <div class="min-h-screen max-w-[1500px] mx-auto border">
         <header class="flex flex-col w-full">
             <div class="flex justify-between items-center p-4">
-                <a href="/">
+                <a href="{{ route('home') }}">
                     <img src="{{ asset('images/logo.png') }}" alt="Logo JNE" class="w-36">
                 </a>
-
-                <div class="flex justify-end">
-                    <div class="inline-flex rounded-md shadow-sm bg-gray-200" role="group">
-                        <a href="#"
-                            class="bg-transparent py-5 px-7 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-                            Tentang Kami
-                        </a>
-                        <a href="#"
-                            class="bg-transparent py-5 px-7 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-                            Layanan Hukum
-                        </a>
-                        <a href="#"
-                            class="bg-transparent py-5 px-7 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-                            Informasi
-                        </a>
-                        <a href="#"
-                            class="bg-transparent py-5 px-7 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-                            Database
-                        </a>
-                        <a href="/contact-us"
-                            class="bg-transparent py-5 px-7 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-                            Hubungi Kami
-                        </a>
-                        <a href="#"
-                            class="flex items-center justify-center text-center py-3 px-10 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Masuk</a>
-
-                    </div>
-                </div>
             </div>
 
-
+            <div class="flex justify-end">
+                <div class="inline-flex rounded-md shadow-sm bg-gray-200 -mt-16" role="group">
+                    <a href="#"
+                        class="bg-transparent py-5 px-7 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                        Tentang Kami
+                    </a>
+                    <a href="#"
+                        class="bg-transparent py-5 px-7 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                        Layanan Hukum
+                    </a>
+                    <a href="#"
+                        class="bg-transparent py-5 px-7 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                        Informasi
+                    </a>
+                    <a href="/database"
+                        class="bg-transparent py-5 px-7 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                        Database
+                    </a>
+                    <a href="{{ route('contactUs') }}"
+                        class="bg-transparent py-5 px-7 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                        Hubungi Kami
+                    </a>
+                    @guest
+                        <a href="/login"
+                            class="bg-transparent py-5 px-7 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                            Login
+                        </a>
+                    @endguest
+                    @auth
+                        <a href="{{ route('logout') }}"
+                            class="bg-transparent py-5 px-7 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                            Hi, {{ Auth::user()->name }}
+                        </a>
+                    @endauth
+                </div>
+            </div>
 
             <div class="bg-[#D0391C] py-1 px-4">
                 <div class="grid grid-cols-2">
